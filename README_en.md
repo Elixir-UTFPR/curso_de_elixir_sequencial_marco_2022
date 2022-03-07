@@ -1,6 +1,5 @@
 # Sequential Elixir Course - March 2022
 
-FUNTEF website link (in Portuguese): https://archive.is/SIeOJ
 
 ## Basic information:
 
@@ -58,3 +57,5 @@ US$ 100,00 using a credit card.
 ## More information
 
 Extension Courses Division: UTFPR Headquarters Center, Block J, Ground Floor Contact e-mail: dicpro-ct@utfpr.edu.br.
+
+FUNTEF website link (in Portuguese): https://archive.is/SIeOJ

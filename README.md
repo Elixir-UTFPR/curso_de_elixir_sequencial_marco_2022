@@ -1,6 +1,5 @@
 # Curso de Elixir Sequencial - Março 2022
 
-Link do site da FUNTEF: https://archive.is/SIeOJ
 
 ## Informações básicas:
 
@@ -59,3 +58,5 @@ R$ 500,00 no boleto, ou parcelado (com juros) em até 3x no cartão.
 
 Divisão de Cursos de Extensão: UTFPR Sede Centro, Bloco J, Térreo E-mail para contato: dicpro-ct@utfpr.edu.br.
 Horário de atendimento: 08h às 12h e das 13h às 17h
+
+Link do site da FUNTEF: https://archive.is/SIeOJ
