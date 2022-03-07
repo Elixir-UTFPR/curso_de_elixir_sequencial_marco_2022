@@ -48,7 +48,7 @@ There will be 5 hours per week of online classes (recorded) with many interactio
 
 Professor Adolfo Gustavo Serra Seca Neto. YouTube channel https://youtube.com/c/AdolfoNeto
 
-Adolfo Neto has been an Associate Professor in the Department of Informatics at the Federal University of Technology - Paraná (UTFPR), Brazil, since 2008. He holds a Doctorate in Computer Science from the University of São Paulo, Brazil, 2007. He has served as a member of technical committees and reviewer for some conferences and journals. His research interests include knowledge sharing in software engineering, agile software development and logic for computer science.
+Adolfo Neto has been an Associate Professor in the Department of Informatics at the Federal University of Technology - Paraná (UTFPR), Brazil, since 2008. Read more at https://adolfont.github.io/.
 
 ## Investment
 
