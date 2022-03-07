@@ -43,7 +43,7 @@ Pessoas desenvolvedoras de software que desejam aprender outra linguagem de prog
 
 ## Metodologia
 
-Serão 5 horas por semana de aulas online (gravadas) com bastante interação e live coding (programação ao vivo). Além disso, a pessoa estudante deve dedicar mais 3 horas, pelo menos, à resolução de exercícios e ao consumo de materiais indicados pelo instrutor.
+Serão 5 horas por semana de aulas online (gravadas) com bastante interação e live coding (programação ao vivo). Além disso, a pessoa estudante deve dedicar mais 3 horas em cada semana, pelo menos, à resolução de exercícios e ao consumo de materiais indicados pelo instrutor.
 
 ## Instrutor/Coordenador
 
