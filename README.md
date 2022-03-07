@@ -1,5 +1,7 @@
 # Curso de Elixir Sequencial - Março 2022
 
+Link do site da FUNTEF: https://archive.is/SIeOJ
+
 ## Informações básicas:
 
 - Carga horária: 16 h/a
