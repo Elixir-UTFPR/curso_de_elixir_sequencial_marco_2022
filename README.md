@@ -26,7 +26,7 @@ Pessoas desenvolvedoras de software que desejam aprender outra linguagem de prog
   - O que significa Elixir ser uma linguagem de programação funcional?
   - O que significa Elixir ser uma linguagem de programação concorrente?
   - Quais são os tipos básicos em Elixir?
-  - Quais são as operações básicas em Elixir?4. Recursos humanos e físicos
+  - Quais são as operações básicas em Elixir?
   - Quais são os tipos de coleções mais usados em Elixir?
   - O que é um módulo?
   - O que é e para que serve o módulo Enum?
