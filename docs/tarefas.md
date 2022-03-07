@@ -9,4 +9,4 @@
 2. Criar conta no GitHub http://github.com
 3. Criar conta no Exercism (usando a conta do GitHub) https://exercism.org/
 4. Entrar na Trilha de Elixir do Exercism https://exercism.org/tracks/elixir
-5. Resolver a primeira tarefa da trilha de Elixir do Exercism e enviar o link para mim. 
+5. Resolver a  tarefa Lasagna https://exercism.org/tracks/elixir/exercises/lasagna da trilha de Elixir do Exercism e enviar o link para mim. 
