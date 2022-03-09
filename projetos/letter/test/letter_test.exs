@@ -1,25 +1,19 @@
 defmodule LetterTest do
   use ExUnit.Case
-  doctest Letter
 
-  test "cumprimenta o mundo" do
-    assert Letter.hello() == :world
-  end
+  describe "Verifica se uma palavra é a palavra escolhida" do
+   test "Verifica se TOUCA é a palavra do dia (e é)" do
+    assert Letter.guess("TOUCA")
+   end
+   test "Verifica se FESTA é a palavra do dia (não é)" do
+    refute Letter.guess("FESTA")
+   end
 
-  test "cumprimenta uma pessoa específica" do
-    assert Letter.hello("Adolfo") == "Hello, Adolfo!"
-    assert Letter.hello("Maria") == "Hello, Maria!"
-  end
+   test "Joga um jogo" do
+      Letter.choose_random_word() |>
+      Letter.automated_guess("FESTA") |>
+      Letter.automated_guess("TORTA")
 
-  describe "Testes sobre Fatorial" do
-    test "o fatorial de 1 é 1"  do
-      assert Letter.fatorial(1) == 1
-    end
-    test "o fatorial de 2 é 2"  do
-      assert Letter.fatorial(2) == 2
-    end
-    test "o fatorial de 3 é 6"  do
-      assert Letter.fatorial(3) == 6
-    end
+   end
   end
 end
