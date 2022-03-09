@@ -1,6 +1,6 @@
 defmodule Letter do
   @moduledoc """
-  Documentation for `Letter`.
+  Documentação para o módulo `Letter`.
   """
 
   @doc """
@@ -11,8 +11,15 @@ defmodule Letter do
       iex> Letter.hello()
       :world
 
+      iex> Letter.hello("Elixir")
+      "Hello, Elixir!"
+    
   """
   def hello do
     :world
+  end
+
+  def hello(name) do
+    "Hello, #{name}!"
   end
 end
