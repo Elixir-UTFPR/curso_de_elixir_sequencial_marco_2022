@@ -11,6 +11,14 @@ defmodule Matematica do
         {:ok, num1 / num2}
     end
   end
+
+  defp pdivide(_,0.0) do
+    {:erro, "Não é possível dividir por zero"}
+  end
+
+  defp pdivide(um_numero, outro_numero) do
+    {:ok, um_numero / outro_numero}
+  end
 end
 
 # IO.puts("10 dividido por 3 é")
