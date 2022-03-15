@@ -2,23 +2,22 @@ defmodule Matematica do
   def divide(um_numero, outro_numero) do
     case {Float.parse(um_numero), Float.parse(outro_numero)} do
       {:error, _} ->
-        {:erro, "O primeiro argumento não é um número"}
+        {:erro, "O primeiro argumento não é um número!"}
 
       {_, :error} ->
-        {:erro, "O segundo argumento não é um número"}
+        {:erro, "O segundo argumento não é um número!"}
+
+      {{_num1, _}, {0.0, _}} ->
+        {:erro, "Você tentou uma divisão por zero!"}
 
       {{num1, _}, {num2, _}} ->
         {:ok, num1 / num2}
     end
   end
 
-  defp pdivide(_,0.0) do
-    {:erro, "Não é possível dividir por zero"}
-  end
-
-  defp pdivide(um_numero, outro_numero) do
-    {:ok, um_numero / outro_numero}
-  end
+  # defp pdivide(um_numero, outro_numero) do
+  #   {:ok, um_numero / outro_numero}
+  # end
 end
 
 # IO.puts("10 dividido por 3 é")
