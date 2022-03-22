@@ -3,6 +3,8 @@ defmodule Board do
 
   @notfound "-"
   @found "+"
+  @wrong_position "*"
+  @word_size 5
   # @type t :: %__MODULE__{
 
   #   word: String.t(),
@@ -11,11 +13,23 @@ defmodule Board do
 
   # @spec new(String.t()) :: Board.t()
   def new(word) when is_bitstring(word) do
-    %__MODULE__{word: word, available_letters: all_letters(), current_pattern: "-----"}
+    %__MODULE__{word: word, available_letters: all_letters(), current_pattern: initial_pattern()}
+  end
+
+  defp initial_pattern() do
+    List.duplicate(@notfound, @word_size) |> Enum.join()
   end
 
   defp all_letters() do
     MapSet.new(?A..?Z)
+  end
+
+  def get_pattern(board) do
+    board.current_pattern
+  end
+
+  def get_word(board) do
+    board.word
   end
 
   def guess(board, guess) do
@@ -45,12 +59,13 @@ defmodule Board do
     |> Enum.join()
   end
 
+  # Considerar Á, Ã igual a A e equivalentes
   defp first_match([head | tail], [head | g_tail], result) do
     first_match(tail, g_tail, [head | result])
   end
 
   defp first_match([_ | tail], [_ | g_tail], result) do
-    first_match(tail, g_tail, ["-" | result])
+    first_match(tail, g_tail, [@notfound | result])
   end
 
   defp second_pass(board) do
@@ -80,6 +95,7 @@ defmodule Board do
     Enum.reverse(result)
   end
 
+  # TODO mudar nomes variáveis
   defp second_match([h_patt | t_patt], remaining_word_letters, [g_head | g_tail], result) do
     cond do
       g_head in remaining_word_letters ->
@@ -87,7 +103,7 @@ defmodule Board do
           t_patt,
           remaining_word_letters -- [g_head],
           g_tail,
-          ["*" | result]
+          [@wrong_position | result]
         )
 
       true ->
@@ -118,9 +134,5 @@ defmodule Board do
 
   defp remaining_guess_letters_with_position([_ | tail], [_ | g_tail], result) do
     remaining_guess_letters_with_position(tail, g_tail, [@found | result])
-  end
-
-  def get_pattern(board) do
-    board.current_pattern
   end
 end
