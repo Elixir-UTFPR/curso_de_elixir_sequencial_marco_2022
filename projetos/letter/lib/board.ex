@@ -5,13 +5,7 @@ defmodule Board do
   @found "+"
   @wrong_position "*"
   @word_size 5
-  # @type t :: %__MODULE__{
 
-  #   word: String.t(),
-  #   latest_guess: String.t(),
-  #   available_letters: [String.t()]}
-
-  # @spec new(String.t()) :: Board.t()
   def new(word) when is_bitstring(word) do
     %__MODULE__{word: word, available_letters: all_letters(), current_pattern: initial_pattern()}
   end
@@ -59,7 +53,7 @@ defmodule Board do
     |> Enum.join()
   end
 
-  # Considerar Á, Ã igual a A e equivalentes
+  # TODO (opcional) Considerar Á, Ã igual a A e equivalentes
   defp first_match([head | tail], [head | g_tail], result) do
     first_match(tail, g_tail, [head | result])
   end
@@ -90,12 +84,10 @@ defmodule Board do
     second_match(pattern, rwl, rgl, [])
   end
 
-  # defp second_match(old_pattern, remaining_word_letters, remaining_guess_letters_with_position, result) do
   defp second_match(_, _, [], result) do
     Enum.reverse(result)
   end
 
-  # TODO mudar nomes variáveis
   defp second_match([h_patt | t_patt], remaining_word_letters, [g_head | g_tail], result) do
     cond do
       g_head in remaining_word_letters ->
